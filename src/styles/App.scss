@@ -6,12 +6,13 @@
 
 body {
   margin: 0;
-  background-color: var(--primary-bg-color);
+  background: linear-gradient(45deg, #8064fd, #f39b93);
+  min-height: 100vh;
   font-family: "Raleway", sans-serif;
   display: grid;
   text-align: center;
   justify-items: center;
-  align-items: center;
+  // align-items: center;
 }
 
 .app {

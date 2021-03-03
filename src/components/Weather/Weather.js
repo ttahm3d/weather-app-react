@@ -19,17 +19,19 @@ const Weather = ({ weather, location }) => {
           />
         </div>
       </div>
-
-      <div className="temp">
-        <h3>Temperature {weather.main.temp} &deg; C</h3>
-        <p>Max {weather.main.temp_max} &deg; C</p>
-        <p>Min {weather.main.temp_min} &deg; C</p>
-      </div>
-      <div className="pressure">
-        <h3>Pressure {weather.main.pressure} hPa</h3>
-      </div>
-      <div className="humidity">
-        <h3>Humidity {weather.main.humidity}%</h3>
+      <div className="vitals">
+        <div className="temp">
+          <h3>Temperature</h3>
+          <h3>{weather.main.temp} &deg; C</h3>
+        </div>
+        <div className="pressure">
+          <h3>Pressure</h3>
+          <h3> {weather.main.pressure} hPa</h3>
+        </div>
+        <div className="humidity">
+          <h3>Humidity </h3>
+          <h3>{weather.main.humidity}%</h3>
+        </div>
       </div>
     </div>
   );

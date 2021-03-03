@@ -11,17 +11,30 @@
   .details {
     display: grid;
     grid-template-columns: 75% 25%;
-    border: tomato 1px solid;
   }
 
   .info {
-    border: turquoise 1px solid;
     text-align: left;
     align-self: stretch;
     padding: 5px;
   }
 
+  .icon {
+    align-self: center;
+  }
+
   .icon img {
-    aspect-ratio: 1/1;
+    width: 100px;
+    height: 100px;
+  }
+
+  .vitals {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .vitals > div {
+    box-shadow: 0px 0px 5px #e6e6e6;
   }
 }
