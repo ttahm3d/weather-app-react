@@ -1,0 +1,27 @@
+.weather {
+  .location {
+    font-size: 2rem;
+  }
+
+  .small-info {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+  }
+
+  .details {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    border: tomato 1px solid;
+  }
+
+  .info {
+    border: turquoise 1px solid;
+    text-align: left;
+    align-self: stretch;
+    padding: 5px;
+  }
+
+  .icon img {
+    aspect-ratio: 1/1;
+  }
+}

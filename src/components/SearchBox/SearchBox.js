@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../styles/SearchBox.scss";
 
 const SearchBox = ({ setLocation }) => {
   const [input, setInput] = useState("");
@@ -16,7 +17,7 @@ const SearchBox = ({ setLocation }) => {
         placeholder="Enter Location"
         onChange={(e) => setInput(e.target.value)}
       />
-      <input type="submit" value="Search" />
+      <input type="submit" value="🔍" />
     </form>
   );
 };

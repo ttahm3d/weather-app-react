@@ -1,0 +1,32 @@
+@import "./theme.scss";
+
+form {
+  input[type="text"] {
+    background-color: #f1f1f1;
+    width: 45vw;
+    height: 40px;
+    color: #333;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    font-family: "Raleway", sans-serif;
+    padding: 10px;
+
+    &:focus {
+      background-color: #fafafa;
+    }
+  }
+
+  input[type="submit"] {
+    height: 40px;
+    outline: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    background: var(--primary-bg-color);
+
+    &:hover {
+      background-color: #eee;
+    }
+  }
+}
